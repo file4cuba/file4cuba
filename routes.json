@@ -1,0 +1,14 @@
+[{
+    "settings": [ "master" ],
+    "index": {
+        "verb": ["get"],
+        "path": "/",
+        "call": "frame.index"
+    },
+    "explorer": {
+        "verb": ["get"],
+        "path": "/explorer",
+        "call": "explorer.index"
+    }
+
+}]

@@ -1,0 +1,95 @@
+<div id="{{mojit_view_id}}" class="container-fluid">
+      <div class="row-fluid">
+            
+          <ul class="breadcrumb">
+            <button class="btn btn-small"><i class="icon-chevron-left"></i></button>
+            <button class="btn btn-small"><i class="icon-chevron-right"></i></button>
+            <li><a href="#">Explorer</a> <span class="divider">/</span></li>
+            <li><a href="#">iPhone</a> <span class="divider">/</span></li>
+            <li class="active">Apps</li>
+          </ul>
+      </div> 
+      <div class="row-fluid">
+        <div id="tree" class="span2 well">
+          <ul class="nav nav-list">
+            <li class="nav-header"><i class="icon-hdd"></i> Nube</li>
+            {{#each list}}
+                <li><a href="#{{name}}">{{name}}</a></li>
+            {{/each}}
+
+            <li class="divider"></li>
+
+          </ul>
+          <ul class="nav nav-list">
+            <li class="nav-header"><i class="icon-shopping-cart"></i>Prelavorados</li>
+            {{#each list}}
+                <li><a href="#{{name}}">{{name}}</a></li>
+            {{/each}}
+
+            <li class="divider"></li>
+
+          </ul>
+            <div class="nav-header"><i class="icon-briefcase"></i> Mi Driver</div>
+            <div id="cd-info">
+                <div class="cd-content"></div>
+                <div> 3.8 GB</div>
+                <div class="progress">
+                    <div class="bar bar-info" style="width: 60%;"></div>
+                    <div class="bar bar-warning" style="width: 40%;"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+          <ul class="nav nav-list">
+            <li><a href="#">Angry Birds.ipa</a></li>
+            <li><a href="#">Call of Dutty.iso</a></li>
+            <li><a href="#">Angry Birds.exe</a></li>
+            <li><a href="#">Angry Birds.apk</a></li>
+
+          </ul>
+          <button class="btn btn-info nav"><i class="icon-check icon-white"></i> Solicitar</button>
+
+        </div>
+        <div class="span10 well" id="explorer">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Tama&ntilde;o</th>
+                        <th>Precio</th>
+                        <th>Compra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each list}}
+                    <tr>
+                        <td class="add-control">
+                            <button class="btn btn-success btn-mini"><i class="icon-plus-sign icon-white"></i></button>
+                        </td>
+                        <td>
+                            {{#if child}} 
+                                <i class="icon-file"></i>
+                            {{else}}
+                                <i class="icon-folder-close"></i>
+                            {{/if}}
+
+                            {{name}}{{ext}}
+                        </td>
+                        <td>{{size}}</td>
+                        <td>${{price}}</td>
+                        <td>{{cant}}</td>
+                        {{#if child}} 
+                            <td class="chevron"><i class="icon-plus-sign"></i></td>
+                        {{else}}
+                            <td class="chevron"><i class="icon-chevron-right"></i></td>
+                        {{/if}}
+                    </tr>
+                {{/each}}
+
+                </tbody>
+            </table>
+        </div>
+      </div>
+</div>
+

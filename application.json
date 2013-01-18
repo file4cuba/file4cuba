@@ -1,0 +1,96 @@
+[{
+    "settings": ["master"],
+    "appPort": "8666",
+    "appName": "My Package",
+    "title": "My Package",
+    "specs": {
+        "frame": {
+            "type": "HTMLFrameMojit",
+            "config": {
+                "deploy": true,
+                "child": {
+                    "base": "page"
+                }
+            }
+        },
+        "page": {
+            "type": "Page",
+            "config": {
+                "children": {
+                    "hero": {
+                        "type": "Hero",
+                        "config": {
+
+                        }
+                    }
+                }
+            }
+        },
+        "explorer": {
+            "type": "HTMLFrameMojit",
+            "config": {
+                "deploy": true,
+                "child": {
+                    "base": "pageexplorer"
+                }
+            }
+        },
+        "pageexplorer": {
+            "type": "Page",
+            "config": {
+                "children": {
+                    "explorer": {
+                        "type": "Explorer",
+                        "config": {
+
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "yui": {
+        "config": {
+            "fetchCSS": false
+        }
+    },
+    "builds": {
+        "html5app": {
+            "urls": ["/index.html"]
+        }
+    }
+}, {
+    "settings": ["environment:dev"],
+    "staticHandling": {
+        "forceUpdate": true
+    },
+    "yui": {
+        "config": {
+            "combine": false,
+            "base": "/static/yui/"
+        }
+    }
+}, {
+    "settings": ["build:debug"],
+    "yui": {
+        "config": {
+            "seed": [
+                "/static/yui/yui-base/yui-base-min.js",
+                "/static/yui/loader-base/loader-base-min.js",
+                "loader-yui3-resolved{langPath}",
+                "loader-app",
+                "loader-app-resolved{langPath}"
+            ],
+            "base": "/static/yui/",
+            "combine": false,
+            "root": "",
+            "groups": {
+                "app": {
+                    "combine": false,
+                    "base": "/.",
+                    "root": ""
+                }
+            }
+        }
+    }
+}]

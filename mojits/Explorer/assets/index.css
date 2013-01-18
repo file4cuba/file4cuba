@@ -1,0 +1,27 @@
+.add-control{
+    width: 20px;
+}
+.add-control button{
+    margin-top: -5px;
+}
+.add-control .btn-mini i{
+    margin-top: -1px;
+}
+.chevron{
+    width: 20px;
+}
+
+#explorer {
+    padding: 0;
+}
+
+#cd-info .progress{
+    /*margin-top: 30px;*/
+}
+#cd-info .cd-content{
+    background-image: url("./cd.png");
+    width: 48px;
+    height: 48px;
+    float: left;
+    /*margin-top: -24px;*/
+}
