@@ -32,7 +32,6 @@ YUI.add('ExplorerModelFile', function(Y, NAME) {
          */
         getFiles: function(callback, name) {
             var data = this._getTree();
-
             callback(null, data);
         },
 
@@ -234,6 +233,43 @@ YUI.add('ExplorerModelFile', function(Y, NAME) {
 
 
             return data;
+        },
+
+        getData: function(id){
+            var tree = this_getTree();
+            return  [{
+                                    name: 'Angry Bird',
+                                    size: '2.5 MB',
+                                    price: 10,
+                                    cant: 2,
+                                    ext: '.ipa'
+                     },
+                     {
+                                    name: 'Firefox',
+                                    size: '4.3 HB',
+                                    price: 3.50,
+                                    cant: 50,
+                                    ext: '.iso'
+                    },
+                    {
+                                    name: 'FIFA',
+                                    size: '3.2 HB',
+                                    price: 32.00,
+                                    cant: 20,
+                                    ext: '.pdf'
+                    }];
+
+
+
+        },
+        ATTRS:{
+
+            tree:{
+                value:{
+                    
+                }
+            }
+            
         }
 
     };
