@@ -25,14 +25,17 @@ YUI.add('Explorer', function(Y, NAME) {
          *        to the Mojito API.
          */
         index: function(ac) {
-            ac.models.get('ExplorerModelFile').getFiles(function(err, data) {
+            ac.models.get('ExplorerModelFile').getChilds(345,function(err, data) {
                 if (err) {
                     ac.error(err);
                     return;
                 }
+
+                Y.log('la data en el index');
+                Y.log(data[0]);
                 ac.assets.addCss('./index.css');
                 ac.done({
-                    list: data.childs
+                    list: data
                 });
             });
         }
