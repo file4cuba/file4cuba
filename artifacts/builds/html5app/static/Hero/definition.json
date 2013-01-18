@@ -1,0 +1,26 @@
+{
+    "type": "Hero",
+    "instanceId": "yui_3_7_3_1_1358497916644_54",
+    "config": {},
+    "defaults": {},
+    "definition": {},
+    "assets": {
+        "favicon.ico": "/favicon.ico",
+        "index.css": "/static/Hero/assets/index.css"
+    },
+    "binders": {
+        "index": "HeroBinderIndex"
+    },
+    "langs": {},
+    "models": {
+        "model": "HeroModelModel"
+    },
+    "views": {
+        "index": {
+            "content-path": "/static/Hero/views/index.hb.html",
+            "engine": "hb"
+        }
+    },
+    "acAddons": {},
+    "assetsRoot": "/static/Hero/assets"
+}

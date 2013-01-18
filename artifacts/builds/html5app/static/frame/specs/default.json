@@ -1,0 +1,31 @@
+{
+    "base": "frame",
+    "instanceId": "yui_3_7_3_1_1358497916644_60",
+    "type": "HTMLFrameMojit",
+    "config": {
+        "deploy": true,
+        "child": {
+            "base": "page"
+        }
+    },
+    "id": "frame",
+    "defaults": {},
+    "definition": {
+        "yui": {
+            "sharedYUIInstance": true
+        }
+    },
+    "assets": {
+        "favicon.ico": "/favicon.ico"
+    },
+    "binders": {},
+    "langs": {},
+    "models": {},
+    "views": {
+        "index": {
+            "engine": "hb"
+        }
+    },
+    "acAddons": {},
+    "assetsRoot": "/static/HTMLFrameMojit/assets"
+}

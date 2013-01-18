@@ -1,0 +1,32 @@
+body{
+  margin-top: 60px;
+}
+
+#form-search{
+    margin-top: 5px;
+}
+#btn-credit, #btn-notifications, #btn-login{
+  margin-right: 5px;
+
+}
+#btn-credit .caret, #btn-notifications .caret, #btn-login .caret, #btn-profile .caret{
+    border-top: 4px solid #FFFFFF;
+}
+
+.site-name, .app-name{
+    color: #FFFFFF;
+}
+
+.footer {
+    padding: 70px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+    background-color: whiteSmoke;
+}
+.footer p {
+    margin-bottom: 0;
+    color: #777;
+}
+
+
+

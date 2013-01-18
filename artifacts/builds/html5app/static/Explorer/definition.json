@@ -1,0 +1,27 @@
+{
+    "type": "Explorer",
+    "instanceId": "yui_3_7_3_1_1358497916644_53",
+    "config": {},
+    "defaults": {},
+    "definition": {},
+    "assets": {
+        "favicon.ico": "/favicon.ico",
+        "cd.png": "/static/Explorer/assets/cd.png",
+        "index.css": "/static/Explorer/assets/index.css"
+    },
+    "binders": {
+        "index": "ExplorerBinderIndex"
+    },
+    "langs": {},
+    "models": {
+        "file": "ExplorerModelFile"
+    },
+    "views": {
+        "index": {
+            "content-path": "/static/Explorer/views/index.hb.html",
+            "engine": "hb"
+        }
+    },
+    "acAddons": {},
+    "assetsRoot": "/static/Explorer/assets"
+}

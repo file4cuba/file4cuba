@@ -1,0 +1,41 @@
+{
+    "type": "Page",
+    "instanceId": "yui_3_7_3_1_1358497916644_55",
+    "config": {},
+    "defaults": {},
+    "definition": {},
+    "assets": {
+        "favicon.ico": "/favicon.ico",
+        "bootstrap-responsive.css": "/static/Page/assets/bootstrap-responsive.css",
+        "bootstrap.css": "/static/Page/assets/bootstrap.css",
+        "glyphicons-halflings-white.png": "/static/Page/assets/glyphicons-halflings-white.png",
+        "glyphicons-halflings.png": "/static/Page/assets/glyphicons-halflings.png",
+        "index.css": "/static/Page/assets/index.css",
+        "yvmunayev.png": "/static/Page/assets/yvmunayev.png"
+    },
+    "binders": {
+        "index": "PageBinderIndex"
+    },
+    "langs": {},
+    "models": {
+        "profile": "PageModelProfile"
+    },
+    "views": {
+        "index": {
+            "content-path": "/static/Page/views/index.hb.html",
+            "engine": "hb"
+        },
+        "partials/profile": {
+            "content-path": "/static/Page/views/partials/profile.hb.html",
+            "engine": "hb"
+        }
+    },
+    "controller": "Page",
+    "acAddons": [
+        "assets",
+        "models",
+        "params",
+        "composite"
+    ],
+    "assetsRoot": "/static/Page/assets"
+}

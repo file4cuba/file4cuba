@@ -1,0 +1,89 @@
+<div id="{{mojit_view_id}}">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+
+          <a id="site-name" class="brand" href="/"><b>All4Cuba</b></a><a id="app-name" class="brand" href="/">Files</a>
+
+            <form id="form-search" class="nav nav-bar input-append">
+                <input class="input-xlarge" type="text">
+                <button class="btn btn-info" type="submit">
+                    <i class="icon-search icon-white"></i>
+                </button>
+            </form>
+
+            {{#if profile.id}}
+
+              <div class="nav pull-right item-menu">
+                  <button id="btn-profile" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                    <img src="{{mojit_assets}}/{{profile.user}}.png" class="img-rounded"> {{profile.name}}
+                    <span class="caret"></span>
+                  </button>
+                  <ul id="content-profile" class="dropdown-menu pull-left">
+                    <li><a href="#"><i class="icon-user"></i> Perfil</a></li>
+                    <li><a href="#"><i class="icon-list"></i> Mis Solicitudes</a></li>
+                    <li><a href="#"><i class="icon-edit"></i> Creditos</a></li>
+                    <li class="divider"></li>
+                    <li><a class="info" href="#"><i class=" icon-remove-sign"></i> Salir</a></li>
+                  </ul>
+
+                </div>
+
+
+              <div class="nav pull-right item-menu">
+                  <button id="btn-notifications" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-bell icon-white"></i> Notificaciones <span class="label label-important">{{profile.notifications.cant_new}}</span> <span class="caret"></span>
+                  </button>
+                  <ul id="content-notification" class="dropdown-menu pull-left">
+                    {{#each profile.notifications.list}}
+                    <li>
+                      <a href="#{{id}}">
+                        <i class="icon-comment"></i> 
+                        <b>{{user}}</b> {{text}}
+                        {{#if new}}
+                          <span class="label label-important">Nueva</span>
+                        {{/if}}
+                      </a>
+                    </li>
+                    {{/each}}
+                    <li class="divider"></li>
+                    <li><a class="info" href="#"><i class="icon-list"></i> Ver todas las Notificaciones</a></li>
+                  </ul>
+
+                </div>
+
+              <button id="btn-credit" class="btn btn-info pull-right">
+                   ${{profile.credit}}
+              </button>
+
+            {{else}}
+              <button id="btn-login" class="btn btn-info pull-right">
+                <i class="icon-user icon-white"></i> Entrar 
+                <span class="caret"></span>
+              </button>
+            {{/if}}
+
+
+            
+
+
+          </div>
+        </div>
+      </div>
+
+    
+    {{{hero}}}
+    {{{explorer}}}
+
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Diseño y construido por <a href="http://www.solocuba.com" target="_blank">SoloCuba Team</a>.</p>
+        <p>Nos pude seguir en <a href="http://twitter.com/solocuba_team" target="_blank">@solocuba_team</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </div>
+    </footer>
+
+
+</div>

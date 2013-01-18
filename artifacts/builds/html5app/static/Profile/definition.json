@@ -1,0 +1,24 @@
+{
+    "type": "Profile",
+    "instanceId": "yui_3_7_3_1_1358497916644_58",
+    "config": {},
+    "defaults": {},
+    "definition": {},
+    "assets": {
+        "favicon.ico": "/favicon.ico",
+        "index.css": "/static/Profile/assets/index.css"
+    },
+    "binders": {
+        "index": "ProfileBinderIndex"
+    },
+    "langs": {},
+    "models": {},
+    "views": {
+        "index": {
+            "content-path": "/static/Profile/views/index.hb.html",
+            "engine": "hb"
+        }
+    },
+    "acAddons": {},
+    "assetsRoot": "/static/Profile/assets"
+}
